@@ -1,0 +1,6 @@
+@UMonitorWebAPI_HostAddress = http://localhost:5276
+
+GET {{UMonitorWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

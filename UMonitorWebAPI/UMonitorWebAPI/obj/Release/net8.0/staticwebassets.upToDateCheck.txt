@@ -1,0 +1,4 @@
+wwwroot\js\signalr\dist\browser\signalr.js
+wwwroot\js\signalr\dist\browser\signalr.js.map
+wwwroot\js\signalr\dist\browser\signalr.min.js
+wwwroot\js\signalr\dist\browser\signalr.min.js.map

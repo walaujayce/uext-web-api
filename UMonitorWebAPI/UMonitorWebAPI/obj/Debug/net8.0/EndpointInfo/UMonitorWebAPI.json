@@ -1,0 +1,2652 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "UMonitorWebAPI",
+    "version": "1.0.51"
+  },
+  "paths": {
+    "/api/db/Alert": {
+      "get": {
+        "tags": [
+          "Alert"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Alert"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Alert"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Alert"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Alert"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPostDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPostDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPostDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Alert/{patientid}": {
+      "get": {
+        "tags": [
+          "Alert"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Alert"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AlertPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Alert"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Device": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeviceGetDto"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeviceGetDto"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/DeviceGetDto"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePostDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePostDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePostDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Device/{deviceid}": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "deviceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "deviceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DevicePutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "deviceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Device/Status/{deviceid}": {
+      "put": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "deviceid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceStatusPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceStatusPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceStatusPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Device/filter": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceFilterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceFilterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/DeviceFilterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Errorlog": {
+      "get": {
+        "tags": [
+          "Errorlog"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Errorlog"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Errorlog"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Errorlog"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/db/Errorlog/{guid}": {
+      "get": {
+        "tags": [
+          "Errorlog"
+        ],
+        "parameters": [
+          {
+            "name": "guid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Errorlog"
+        ],
+        "parameters": [
+          {
+            "name": "guid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Errorlog/filter": {
+      "post": {
+        "tags": [
+          "Errorlog"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ErrorlogFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Floor": {
+      "get": {
+        "tags": [
+          "Floor"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/IPAddress": {
+      "get": {
+        "tags": [
+          "IPAddress"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "IPAddress"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/IPAddress/{id}": {
+      "get": {
+        "tags": [
+          "IPAddress"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "string"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "IPAddress"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "type": "string"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "IPAddress"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/InitDefaultValue/InitializeData": {
+      "post": {
+        "tags": [
+          "InitDefaultValue"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Notification": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Notification"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Notification"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Notification"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPostDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPostDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPostDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Notification/{id}": {
+      "get": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Notification"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Notification/broadcast": {
+      "post": {
+        "tags": [
+          "Notification"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationMessage"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationMessage"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/NotificationMessage"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Patient": {
+      "get": {
+        "tags": [
+          "Patient"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Patient"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Patient"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPostDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPostDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPostDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Patient/{patientid}": {
+      "get": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Patient"
+        ],
+        "parameters": [
+          {
+            "name": "patientid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Patient/filter": {
+      "post": {
+        "tags": [
+          "Patient"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientFilterRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientFilterRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/PatientFilterRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/Rawdatum/filter": {
+      "post": {
+        "tags": [
+          "Rawdatum"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RawdatumFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RawdatumFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RawdatumFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/db/RecordData/filter": {
+      "post": {
+        "tags": [
+          "RecordData"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordDataFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordDataFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/RecordDataFilterRequest"
+              },
+              "example": {"deviceid":"string","startTime":"2025-01-01T00:00:00","endTime":"2025-01-01T00:00:00"}
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Section": {
+      "get": {
+        "tags": [
+          "Section"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/SendEmail/validate-email-token": {
+      "get": {
+        "tags": [
+          "SendEmail"
+        ],
+        "parameters": [
+          {
+            "name": "token",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/SendEmail/generate-email-token": {
+      "post": {
+        "tags": [
+          "SendEmail"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/SendEmail/send-email": {
+      "post": {
+        "tags": [
+          "SendEmail"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ForgetPasswordRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/User"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPostDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPostDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPostDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/{userid}": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPutDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPutDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserPutDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "User"
+        ],
+        "parameters": [
+          {
+            "name": "userid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/User/login": {
+      "post": {
+        "tags": [
+          "User"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserLoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Alert": {
+        "type": "object",
+        "properties": {
+          "alertcontroller": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstarttime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstoptime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debounce": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "exitalert": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert5": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert6": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert7": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "enablealert1": {
+            "type": "boolean"
+          },
+          "enablealert2": {
+            "type": "boolean"
+          },
+          "enablealert3": {
+            "type": "boolean"
+          },
+          "enablealert4": {
+            "type": "boolean"
+          },
+          "enablealert5": {
+            "type": "boolean"
+          },
+          "enablealert6": {
+            "type": "boolean"
+          },
+          "enablealert7": {
+            "type": "boolean"
+          },
+          "alertguid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "patientid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlertPostDto": {
+        "type": "object",
+        "properties": {
+          "alertcontroller": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstarttime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstoptime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debounce": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "exitalert": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert5": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert6": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert7": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "enablealert1": {
+            "type": "boolean"
+          },
+          "enablealert2": {
+            "type": "boolean"
+          },
+          "enablealert3": {
+            "type": "boolean"
+          },
+          "enablealert4": {
+            "type": "boolean"
+          },
+          "enablealert5": {
+            "type": "boolean"
+          },
+          "enablealert6": {
+            "type": "boolean"
+          },
+          "enablealert7": {
+            "type": "boolean"
+          },
+          "patientid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AlertPutDto": {
+        "type": "object",
+        "properties": {
+          "alertcontroller": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstarttime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "alertstoptime": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debounce": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "exitalert": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert1": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert2": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert3": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert4": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert5": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert6": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "posturealert7": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heartratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratehighlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "respiratoryratelowlimit": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "enablealert1": {
+            "type": "boolean"
+          },
+          "enablealert2": {
+            "type": "boolean"
+          },
+          "enablealert3": {
+            "type": "boolean"
+          },
+          "enablealert4": {
+            "type": "boolean"
+          },
+          "enablealert5": {
+            "type": "boolean"
+          },
+          "enablealert6": {
+            "type": "boolean"
+          },
+          "enablealert7": {
+            "type": "boolean"
+          },
+          "patientid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Device": {
+        "type": "object",
+        "properties": {
+          "devicetype": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "macaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "devicestatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "used": {
+            "type": "boolean"
+          },
+          "connect": {
+            "type": "boolean"
+          },
+          "actionid": {
+            "type": "string",
+            "nullable": true
+          },
+          "disconnectCnt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recordMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "judgemethod": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgepar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgebox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitpar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitbox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heightTh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "erMap": {
+            "type": "string",
+            "nullable": true
+          },
+          "vmax": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vmin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debTst": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debFps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "boxYStart": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgeSitPoint": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emasize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emathres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noisethres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pmio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bed": {
+            "type": "string",
+            "nullable": true
+          },
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          },
+          "patients": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Patient"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeviceFilterRequest": {
+        "type": "object",
+        "properties": {
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeviceGetDto": {
+        "type": "object",
+        "properties": {
+          "devicetype": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "macaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "devicestatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "used": {
+            "type": "boolean"
+          },
+          "connect": {
+            "type": "boolean"
+          },
+          "actionid": {
+            "type": "string",
+            "nullable": true
+          },
+          "disconnectCnt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recordMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "judgemethod": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgepar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgebox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitpar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitbox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heightTh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "erMap": {
+            "type": "string",
+            "nullable": true
+          },
+          "vmax": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vmin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debTst": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debFps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "boxYStart": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgeSitPoint": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emasize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emathres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noisethres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pmio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bed": {
+            "type": "string",
+            "nullable": true
+          },
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DevicePostDto": {
+        "type": "object",
+        "properties": {
+          "devicetype": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "macaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "used": {
+            "type": "boolean"
+          },
+          "bed": {
+            "type": "string",
+            "nullable": true
+          },
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DevicePutDto": {
+        "type": "object",
+        "properties": {
+          "devicetype": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "macaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "devicestatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "used": {
+            "type": "boolean"
+          },
+          "connect": {
+            "type": "boolean"
+          },
+          "actionid": {
+            "type": "string",
+            "nullable": true
+          },
+          "disconnectCnt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recordMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "judgemethod": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgepar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgebox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitpar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitbox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heightTh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "erMap": {
+            "type": "string",
+            "nullable": true
+          },
+          "vmax": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vmin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debTst": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debFps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "boxYStart": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgeSitPoint": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emasize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emathres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noisethres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pmio": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "bed": {
+            "type": "string",
+            "nullable": true
+          },
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "DeviceStatusPutDto": {
+        "type": "object",
+        "properties": {
+          "devicetype": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "macaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipaddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "devicestatus": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "used": {
+            "type": "boolean"
+          },
+          "connect": {
+            "type": "boolean"
+          },
+          "actionid": {
+            "type": "string",
+            "nullable": true
+          },
+          "disconnectCnt": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "recordMode": {
+            "type": "string",
+            "nullable": true
+          },
+          "version": {
+            "type": "string",
+            "nullable": true
+          },
+          "judgemethod": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgepar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgebox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitpar": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sitbox": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "heightTh": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "erMap": {
+            "type": "string",
+            "nullable": true
+          },
+          "vmax": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "vmin": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debTst": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "debFps": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "boxYStart": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "edgeSitPoint": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emasize": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "emathres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "noisethres": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pmio": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Errorlog": {
+        "type": "object",
+        "properties": {
+          "guid": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "logtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "log": {
+            "type": "string",
+            "nullable": true
+          },
+          "logtime": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "checkStatus": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ErrorlogFilterRequest": {
+        "type": "object",
+        "properties": {
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ErrorlogPutDto": {
+        "type": "object",
+        "properties": {
+          "checkStatus": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ForgetPasswordRequest": {
+        "type": "object",
+        "properties": {
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Notification": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "notifyBody": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "punchTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationMessage": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationPostDto": {
+        "type": "object",
+        "properties": {
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "notifyBody": {
+            "type": "string",
+            "nullable": true
+          },
+          "checkStatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "punchTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "NotificationPutDto": {
+        "type": "object",
+        "properties": {
+          "checkStatus": {
+            "type": "boolean",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Patient": {
+        "type": "object",
+        "properties": {
+          "patientname": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientid": {
+            "type": "string",
+            "nullable": true
+          },
+          "sex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "height": {
+            "type": "number",
+            "format": "double"
+          },
+          "weight": {
+            "type": "number",
+            "format": "double"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "device": {
+            "$ref": "#/components/schemas/Device"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatientFilterRequest": {
+        "type": "object",
+        "properties": {
+          "floor": {
+            "type": "string",
+            "nullable": true
+          },
+          "section": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatientPostDto": {
+        "type": "object",
+        "properties": {
+          "patientname": {
+            "type": "string",
+            "nullable": true
+          },
+          "patientid": {
+            "type": "string",
+            "nullable": true
+          },
+          "sex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "height": {
+            "type": "number",
+            "format": "double"
+          },
+          "weight": {
+            "type": "number",
+            "format": "double"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "PatientPutDto": {
+        "type": "object",
+        "properties": {
+          "patientname": {
+            "type": "string",
+            "nullable": true
+          },
+          "sex": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "birthday": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "height": {
+            "type": "number",
+            "format": "double"
+          },
+          "weight": {
+            "type": "number",
+            "format": "double"
+          },
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RawdatumFilterRequest": {
+        "type": "object",
+        "properties": {
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "RecordDataFilterRequest": {
+        "type": "object",
+        "properties": {
+          "deviceid": {
+            "type": "string",
+            "nullable": true
+          },
+          "startTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "endTime": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "User": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastlogin": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "role": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserLoginDto": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserPostDto": {
+        "type": "object",
+        "properties": {
+          "userid": {
+            "type": "string",
+            "nullable": true
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserPutDto": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "role": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

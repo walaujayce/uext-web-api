@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\SourceCode\SW_UMonitorWebAPI\UMonitorWebAPI\UMonitorWebAPI\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-12-31T02:32:00.1919991Z;True|2024-12-31T09:55:32.8492702+08:00;True|2024-12-11T13:31:20.1675005+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>
